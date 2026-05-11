@@ -12,7 +12,7 @@ Documentacoes usadas como base:
 Em outro projeto, instale por caminho local enquanto este pacote nao estiver publicado:
 
 ```bash
-composer config repositories.alfa-transportes path /home/celio/sites/outros/packages/api-alfa-transportes/cx
+composer config crmdesenvolvimentos/alfa-transportes path /packages/alfa-transportes
 composer require crmdesenvolvimentos/alfa-transportes
 ```
 
