@@ -63,7 +63,22 @@ final class TrackingResponse
 
     public function isSuccessful(): bool
     {
+        return in_array($this->statusCode(), [1, 2]);
+    }
+
+    public function isDelivered(): bool
+    {
         return $this->statusCode() === 2;
+    }
+
+    public function shipperName(): ?string
+    {
+        return isset($this->data['dadosRemetente']['nomeRemetente']) ? (string) $this->data['dadosRemetente']['nomeRemetente'] : null;
+    }
+
+    public function recipientName(): ?string
+    {
+        return isset($this->data['dadosCte']['nomeDestinatario']) ? (string) $this->data['dadosCte']['nomeDestinatario'] : null;
     }
 
     public function cteNumber(): ?string
