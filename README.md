@@ -1,6 +1,6 @@
 # Alfa Transportes
 
-Biblioteca PHP 7.4+ para consumir as APIs de cotacao e rastreamento de frete da Alfa Transportes.
+Biblioteca PHP 7.2+ para consumir as APIs de cotacao e rastreamento de frete da Alfa Transportes.
 
 Documentacoes usadas como base:
 
